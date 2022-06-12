@@ -22,7 +22,7 @@ object FactoryProgressBars{
                         Lines.line(
                             building.x - building.block.size.toFloat() * 3f,
                             building.y + building.block.size.toFloat() * 5.5f,
-                            building.x - building.block.size.toFloat() * 3f + building.progress() * building.block.size.toFloat() * 6f,
+                            building.x - building.block.size.toFloat() * 3f + building.progress * building.block.size.toFloat() * 6f,
                             building.y + building.block.size.toFloat() * 5.5f
                         )
                     }

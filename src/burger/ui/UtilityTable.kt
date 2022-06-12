@@ -6,6 +6,7 @@ import mindustry.ui.Styles
 import mindustry.gen.Icon
 
 import burger.ui.dialogs.*
+import burger.game.*
 
 object UtilityTable{
     var tpos = Vars.ui.hudGroup.find<Table>("minimap/position")
