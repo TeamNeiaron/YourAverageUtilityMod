@@ -13,7 +13,7 @@ import burger.game.*
 
 class YAUM : Mod(){
     
-    lateinit var ai: BaseDialog
+    lateinit var ai: AISwitcherDialog
     
     init{
         Events.on(ClientLoadEvent::class.java){
