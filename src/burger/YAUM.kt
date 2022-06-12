@@ -13,10 +13,11 @@ import burger.game.*
 
 class YAUM : Mod(){
     
-    var ai = AISwitcherDialog()
+    lateinit var ai: BaseDialog
     
     init{
         Events.on(ClientLoadEvent::class.java){
+            ai = AISwitcherDialog()
             UtilityTable.load()
             Healthbars.load()
             FactoryProgressBars.load()
