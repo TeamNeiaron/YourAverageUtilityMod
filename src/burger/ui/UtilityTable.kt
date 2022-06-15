@@ -10,7 +10,6 @@ import burger.game.*
 
 object UtilityTable{
     var tpos = Vars.ui.hudGroup.find<Table>("minimap/position")
-    var ai = AISwitcherDialog()
     
     fun load(){
         tpos.row()
@@ -21,7 +20,7 @@ object UtilityTable{
             
             s.setBackground(Styles.none)
             s.button(Icon.unitsSmall){
-                ai.show()
+                YData.ai.show()
             }.size(45f, 45f)
             
             s.button(Icon.unitsSmall){
