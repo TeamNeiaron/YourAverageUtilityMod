@@ -13,7 +13,7 @@ object YData{
         
         Events.run(Trigger.update){
             if(ai.active){
-                Core.camera.position.set(Vars.player.unit().x, Vars.player.unit().y)
+                Core.camera.position.lerp(Vars.player.unit().x, Vars.player.unit().y, 0.07f)
             }
         }
     }
