@@ -19,11 +19,6 @@ class YAUM : Mod(){
             UtilityTable.load()
             Healthbars.load()
             FactoryProgressBars.load()
-            Events.run(Trigger.update){
-                if(YData.ai.active){
-                    Core.camera.position.set(Vars.player.unit().x, Vars.player.unit().y)
-                }
-            }
         }
     }
 }
