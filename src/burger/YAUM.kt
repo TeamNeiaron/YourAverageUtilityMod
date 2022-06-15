@@ -13,23 +13,17 @@ import burger.game.*
 
 class YAUM : Mod(){
     
-    lateinit var ai: AISwitcherDialog
-    
     init{
         Events.on(ClientLoadEvent::class.java){
-            ai = AISwitcherDialog()
+            YData.load()
             UtilityTable.load()
             Healthbars.load()
             FactoryProgressBars.load()
         }
         Events.run(Trigger.update){
-            if(ai.active){
+            if(YData.ai.active){
                 Core.camera.position.set(Vars.player.unit().x, Vars.player.unit().y)
             }
         }
-    }
-
-    override fun loadContent(){
-        Log.info("Loading some example content.")
     }
 }
