@@ -1,5 +1,8 @@
 package burger.game
 
+import arc.*
+import mindustry.*
+import mindustry.game.EventType.*
 import burger.ui.dialogs.*
 
 object YData{
