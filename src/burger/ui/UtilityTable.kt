@@ -30,6 +30,10 @@ object UtilityTable{
             s.button(Icon.productionSmall){
                 FactoryProgressBars.shown = !FactoryProgressBars.shown
             }.size(45f, 45f).row()
+            
+            s.button(Icon.pencil){
+                YData.timeControl.show()
+            }
         }.size(130f, 240f).row()
     }
 }
